@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net9.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<Version>1.0.6</Version>
+		<PackageOutputPath>D:\MyProjects\SVA\SVA.ERP\Spark.Codeboost</PackageOutputPath>
+		<Description>MinIO entegrasyonunda kullanılır.</Description>
+
+		<!-- Geliştirici ve Şirket Bilgisi -->
+		<Authors>Mehmet Güzel</Authors>
+		<!-- Geliştirici adı -->
+		<Company></Company>
+		<!-- Şirket adı -->
+		<PackageIcon>assets/logo.png</PackageIcon>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Update="assets\logo.png">
+			<Pack>True</Pack>
+			<PackagePath>assets/logo.png</PackagePath>
+		</None>
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.AspNetCore.Http.Features" Version="6.0.0-preview.4.21253.5" />
+		<PackageReference Include="Minio" Version="6.0.4" />
+	</ItemGroup>
+
+</Project>
